@@ -1,0 +1,37 @@
+@import 'normalize.css';
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body{
+	margin: auto;
+	padding: auto;
+	width: auto;
+	height: auto;
+}
+section{
+	margin: 5% 2%;
+}
+img{
+  max-width: 100%;
+  max-height: auto;
+}
+/*Global */
+header{
+
+}
+header .flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+header button{
+  width: 10%;
+  height: auto;
+}
+header #logo{
+  width:20%;
+  height: auto;
+}
