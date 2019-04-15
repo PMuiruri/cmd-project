@@ -19,10 +19,7 @@ img{
   max-height: auto;
 }
 /*Global */
-header{
-
-}
-header .flex-container{
+.navbar{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -34,4 +31,28 @@ header button{
 header #logo{
   width:20%;
   height: auto;
+}
+header .search input{
+	border: none;
+	border-bottom: 2px solid black
+
+}
+.main{
+	display: flex;
+	flex-direction: row;
+	overflow: scroll;
+}
+.main-images{
+	width: 50%;
+	height: 100vh;
+	margin: 1%;
+	padding: 2%;
+}
+.main-content{
+	width: 50%;
+	padding: 3%;
+}
+.main-content p{
+	text-align: justify;
+
 }
