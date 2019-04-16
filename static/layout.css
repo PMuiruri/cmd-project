@@ -8,7 +8,7 @@ html{
 body{
 	margin: auto;
 	padding: auto;
-	width: auto;
+	width: 100%;
 	height: auto;
 }
 section{
@@ -25,35 +25,115 @@ img{
 	flex-wrap: nowrap;
 }
 
-header button{
+/*Header style  */
+header{
+	margin: 1%;
+	padding: 1%;
+}
+/* style for navigation bar  */
+header .navbar{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+/* style for drop down menu */
+header .menu{
   width: 10%;
   height: auto;
+	align-self: center;
 }
 header #logo{
   width:20%;
   height: auto;
 }
+/* style for the search input */
 header .search input{
 	border: none;
 	border-bottom: 2px solid black
-
 }
+header .menu-icons{
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+}
+/*Style for Main content including the images and product description  */
 .main{
-
+	margin: auto;
+	padding: auto;
 }
+/*Style for  images  */
 .main-images{
 	width: 50%;
 	height: 100vh;
-	margin:auto;
-	padding: 2%;
+	margin: 1%;
+	padding: auto 2%;
 	overflow: scroll;
-
+	-ms-overflow-style: none;
+	 scrollbar-width: none;
 }
+/* Style for product desciption and form */
 .main-content{
 	width: 50%;
-	padding: 3%;
+	padding: 1% 5%;
 }
 .main-content p{
 	text-align: justify;
+}
+/* Form styling */
+form option{
+	padding: 2%;
+}
+form label{
+	margin: 2%;
+	padding: 2% 4%;
+}
+form input{
+	border: none;
+	padding: 2%;
+	margin: 2%;
+	text-align: right;
+}
+/*Style for select and options  */
+.opt{
+	border: none;
+	width: 100%;
+	padding: 2%;
+	margin: 2%;
+	overflow: auto;
+}
+/* Style when hovering over different selections */
+select option:hover,
+    select option:focus,
+    select option:active {
+        background: linear-gradient(#000000, #000000);
+        background-color: #000000 !important; /* for IE */
+        color: #ffed00 !important;
+    }
 
+    select option:checked {
+        background: linear-gradient(#d6d6d6, #d6d6d6);
+        background-color: #d6d6d6 !important; /* for IE */
+        color: #000000 !important;
+    }
+
+/* Submit Button style */
+.btn{
+  background-color: black;
+	width: 100%;
+  border: none;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.line{
+	border-top: 2px black solid;
+	width: 100%;
+	padding:2%;
 }
