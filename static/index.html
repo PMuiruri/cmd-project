@@ -45,7 +45,7 @@
           <br>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, earum.</p>
           <div class="line"></div>
-          <form action="POST">
+          <form action="">
             <select  class="opt" name="size" size="5">
               <option value="xs">XS</option>
               <option value="S">S</option>
@@ -55,12 +55,13 @@
             </select>
             <label for="pieces">Pieces</label>
             <span>
-              <button>+</button>
+              <button type="button" onclick="increase()">+</button>
               <input type="number" id="pieces" name="tentacles"
-              min="1" max="10">
-              <button>-</button>
+              min="1" max="10" value= "1">
+              <button type="button" onclick="decrease()">-</button>
               </span>
-              <button class="btn">Submit</button>
+              <div id="error"></div>
+              <button type="submit" class="btn">Submit</button>
               <div class="line"></div>
             </form>
           </div>

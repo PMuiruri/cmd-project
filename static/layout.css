@@ -91,8 +91,6 @@ form label{
 }
 form input{
 	border: none;
-	padding: 2%;
-	margin: 2%;
 	text-align: right;
 }
 /*Style for select and options  */
@@ -117,7 +115,17 @@ select option:hover,
         background-color: #d6d6d6 !important; /* for IE */
         color: #000000 !important;
     }
-
+/*Style for the number input for pieces  */
+input[type="number"] {
+	padding: 2% auto;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
 /* Submit Button style */
 .btn{
   background-color: black;
