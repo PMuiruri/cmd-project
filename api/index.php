@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "J_ohn1135";
+$password = "";
 $dbname = "productdb";
 
 // Create connection
