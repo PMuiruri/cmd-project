@@ -29,6 +29,8 @@ img{
 header{
 	margin: 1%;
 	padding: 1%;
+	width: 100%;
+	top: 0;
 }
 /* style for navigation bar  */
 header .navbar{
@@ -37,16 +39,15 @@ header .navbar{
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
+	height: 40%;
 }
 /* style for drop down menu */
 header .menu{
   width: 10%;
-  height: auto;
 	align-self: center;
 }
 header #logo{
   width:20%;
-  height: auto;
 }
 /* style for the search input */
 header .search input{
@@ -56,12 +57,59 @@ header .search input{
 header .menu-icons{
 	display: inline-flex;
 	flex-direction: row;
+	text-align: right;
+	justify-content: space-around;
 	align-items: center;
+	padding: auto 12%;
+	font-size: 0.7em;
+
+}
+header .shoppingcart{
+	width: 10%;
+	height: auto;
+}
+/*Side bar style  */
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#fff;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color: black;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
 }
 /*Style for Main content including the images and product description  */
 .main{
 	margin: auto;
 	padding: auto;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	 scrollbar-width: none;
 }
 /*Style for  images  */
 .main-images{
@@ -69,9 +117,6 @@ header .menu-icons{
 	height: 100vh;
 	margin: 1%;
 	padding: auto 2%;
-	overflow: scroll;
-	-ms-overflow-style: none;
-	 scrollbar-width: none;
 }
 /* Style for product desciption and form */
 .main-content{
@@ -91,6 +136,11 @@ form label{
 }
 form input{
 	border: none;
+	text-align: right;
+	width: 5%;
+}
+span{
+	float: right;
 	text-align: right;
 }
 /*Style for select and options  */
@@ -127,17 +177,19 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 /* Submit Button style */
-.btn{
-  background-color: black;
-	width: 100%;
-  border: none;
-  color: white;
-  padding: 2%;
-  text-align: center;
+button{
+	background-color: black;
+	border: none;
+	color: white;
+	text-align: center;
   text-decoration: none;
+
+}
+.btn{
+	width: 100%;
+  padding: 2%;
   display: inline-block;
   font-size: 16px;
-
 }
 
 .line{

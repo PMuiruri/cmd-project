@@ -10,8 +10,16 @@
   <header>
     <div >
       <nav class="navbar">
-        <div class="menu">
-          <img src="./images/menu-button.png" alt="">
+        <div class=".side-nav">
+          <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="black" stroke-width="5"/>
+              <path d="M0,14 30,14" stroke="black" stroke-width="5"/>
+              <path d="M0,23 30,23" stroke="black" stroke-width="5"/>
+          </svg>
+            </a>
+          </span>
         </div>
         <div id="logo">
           <img src="./images/zaralogo.png" alt="logo">
@@ -20,6 +28,7 @@
           <label for=""> Search </label>
           <input type="text" name="" value="">
         </div>
+        <span class="menu-icons">
         <div class="login">
           LOG IN
         </div>
@@ -27,18 +36,25 @@
           HELP
         </div>
         <div class="shoppingcart">
-          shopping cart
+          <img src="./images/shopping-cart.png" alt="">
         </div>
+        </span>
       </nav>
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+      </div>
     </div></header>
     <section class="">
       <div class="main flex-container">
-        <div class="main-images">
+        <div class="main-images" id="image-scroll" önscroll="OnScroll(this)">
           <div><img src="./images/image1.jpg" alt=""></div>
           <div><img src="./images/image2.jpg" alt=""></div>
           <div><img src="./images/image3.jpg" alt=""></div>
         </div>
-        <div class="main-content">
+        <div class="main-content" id="content">
           <h1>Polka Dot Dress</h1>
           <p>Black 2343-2121</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rem sint nemo quos omnis dignissimos nam maiores provident perferendis asperiores.</p>
