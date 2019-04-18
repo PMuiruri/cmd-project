@@ -49,7 +49,7 @@
     </div></header>
     <section class="">
       <div class="main flex-container">
-        <div class="main-images" id="image-scroll" önscroll="OnScroll(this)">
+        <div class="main-images" id="image-scroll" >
           <div><img src="./images/image1.jpg" alt=""></div>
           <div><img src="./images/image2.jpg" alt=""></div>
           <div><img src="./images/image3.jpg" alt=""></div>
@@ -61,8 +61,8 @@
           <br>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, earum.</p>
           <div class="line"></div>
-          <form action="">
-            <select  class="opt" name="size" size="5">
+          <form action="" method="POST">
+            <select  id="sizes" class="opt" name="size" size="5">
               <option value="xs">XS</option>
               <option value="S">S</option>
               <option value="M">M</option>
@@ -72,13 +72,20 @@
             <label for="pieces">Pieces</label>
             <span>
               <button type="button" onclick="increase()">+</button>
-              <input type="number" id="pieces" name="tentacles"
+              <input type="number" id="pieces" name="pieces"
               min="1" max="10" value= "1">
               <button type="button" onclick="decrease()">-</button>
               </span>
-              <div id="error"></div>
-              <button type="submit" class="btn">Submit</button>
+              <br>
+              <br>
+              <div id="error"> </div>
+              <br>
+              <br>
+              <button type="button" class="btn" onclick="submitForm()">Submit</button>
               <div class="line"></div>
+              <br>
+              <br>
+              <div id="result"></div>
             </form>
           </div>
         </div>

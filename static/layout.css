@@ -107,6 +107,7 @@ header .shoppingcart{
 .main{
 	margin: auto;
 	padding: auto;
+		height: 90vh;
 	overflow: scroll;
 	-ms-overflow-style: none;
 	 scrollbar-width: none;
@@ -114,14 +115,17 @@ header .shoppingcart{
 /*Style for  images  */
 .main-images{
 	width: 50%;
-	height: 100vh;
+	height: 100%;
 	margin: 1%;
 	padding: auto 2%;
+
 }
 /* Style for product desciption and form */
 .main-content{
 	width: 50%;
+	height: 100%;
 	padding: 1% 5%;
+	position: sticky;
 }
 .main-content p{
 	text-align: justify;
@@ -137,7 +141,7 @@ form label{
 form input{
 	border: none;
 	text-align: right;
-	width: 5%;
+	width: 10%;
 }
 span{
 	float: right;
@@ -178,20 +182,28 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* Submit Button style */
 button{
-	background-color: black;
 	border: none;
-	color: white;
 	text-align: center;
   text-decoration: none;
-
+	font-size: 1.5em;
+	font-weight: bold;
 }
 .btn{
+	background-color: black;
+	color: white;
 	width: 100%;
   padding: 2%;
   display: inline-block;
   font-size: 16px;
 }
-
+#error, #result{
+	color: red;
+	font-size: 0.9em;
+	width: 100%;
+	white-space: normal;
+	padding: 2%;
+	text-align: center;
+}
 .line{
 	border-top: 2px black solid;
 	width: 100%;
