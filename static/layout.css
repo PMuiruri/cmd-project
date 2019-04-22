@@ -105,9 +105,10 @@ header .shoppingcart{
 }
 /*Style for Main content including the images and product description  */
 .main{
+	display: inline-flex;
 	margin: auto;
 	padding: auto;
-		height: 90vh;
+	height: 100vh;
 	overflow: scroll;
 	-ms-overflow-style: none;
 	 scrollbar-width: none;
@@ -118,12 +119,13 @@ header .shoppingcart{
 	height: 100%;
 	margin: 1%;
 	padding: auto 2%;
-
+}
+.main-images div{
+	height: 100vh;
 }
 /* Style for product desciption and form */
 .main-content{
 	width: 50%;
-	height: 100%;
 	padding: 1% 5%;
 	position: sticky;
 }
@@ -208,4 +210,13 @@ button{
 	border-top: 2px black solid;
 	width: 100%;
 	padding:2%;
+}
+.collection{
+	display: flex;
+	height: 35%;
+	width: auto;
+	justify-content: space-between;
+}
+.collection div{
+	width: 32%;
 }
