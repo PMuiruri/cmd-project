@@ -38,31 +38,35 @@ function closeSlideMenu(){
   document.getElementById('side-menu').style.width = '0';
   document.getElementById('main').style.marginLeft = '0';
 }
-TODO: scroll two different divs
-function OnScroll(div) {
-
-    var images = document.getElementById("image-scroll");
+//TODO: scroll two different divs
+function scrollSync(div) {
+    var images = document.getElementById("mainContainer");
     images.scrollTop = div.scrollTop;
       div.scrollIntoView();
 }
 // TODO: Submit form data
-function submitForm(){
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST",'http://localhost/formTest.php', true);
-  xhr.setRequestHeader('Content-type', 'application/json')
-  xhr.onload = function (){
-    document.getElementById('result').innerHTML="";
-    var selected = document.getElementById('sizes');
-    var size = selected.options[selected.selectedIndex].value;
-    var pieces = document.getElementById("pieces").value;
-    var toSend ={
-      size: size,
-      pieces: pieces
-    };
+function submitForm(e){
+  e.preventDefault();
+  var selected = document.getElementById('sizes');
+  var size = selected.options[selected.selectedIndex].value;
+  var pieces = document.getElementById("pieces").value;
+  var toSend ={
+    size: size,
+    pieces: pieces
+  };
 
-    var data = JSON.stringify(toSend);
-  }
-  xhr.send(data);
+  var data = JSON.stringify(toSend);
+  console.log(data);
+  console.log(toSend);
+
+  // var xhr = new XMLHttpRequest();
+  // xhr.open("POST",'http://localhost/formTest.php', true);
+  // xhr.setRequestHeader('Content-type', 'application/json')
+  // // xhr.onload = function (){
+  // //   document.getElementById('result').innerHTML="";
+  // //
+  // // }
+  // xhr.send(data);
 
   // document.getElementById('result').innerHTML="";
   // var selected = document.getElementById('sizes');
@@ -81,6 +85,3 @@ function submitForm(){
   //
 
   }
-
-
-}

@@ -10,6 +10,7 @@ body{
 	padding: auto;
 	width: 100%;
 	height: auto;
+	overflow-y: auto;
 }
 section{
 	margin: 5% 2%;
@@ -109,25 +110,28 @@ header .shoppingcart{
 	margin: auto;
 	padding: auto;
 	height: 100vh;
-	overflow: scroll;
+	overflow-y: auto;
 	-ms-overflow-style: none;
 	 scrollbar-width: none;
 }
 /*Style for  images  */
 .main-images{
 	width: 50%;
-	height: 100%;
+	height: auto;
 	margin: 1%;
 	padding: auto 2%;
 }
 .main-images div{
-	height: 100vh;
+	height: 100vh; 2% auto;
+	padding:
 }
 /* Style for product desciption and form */
 .main-content{
 	width: 50%;
 	padding: 1% 5%;
+	position: -webkit-sticky;
 	position: sticky;
+	top: 0;
 }
 .main-content p{
 	text-align: justify;

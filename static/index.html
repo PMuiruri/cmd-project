@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="./layout.css" type="text/css">
 </head>
 <body>
+  <div id="mainContainer">
   <header>
-    <div >
+    <div>
       <nav class="navbar">
         <div class=".side-nav">
           <span class="open-slide">
@@ -47,22 +48,21 @@
         <a href="#">Kids</a>
       </div>
     </div></header>
-    <section class="">
+    <section >
       <div class="main">
-        <div class="main-images" id="image-scroll" >
+        <div class="main-images" id="image-scroll" onscroll="this.scrollSync">
           <div><img src="./images/image1.jpg" alt=""></div>
           <div><img src="./images/image2.jpg" alt=""></div>
           <div><img src="./images/image3.jpg" alt=""></div>
         </div>
-        <div class="main-content" id="content" onscroll="SyncScroll(this)">
+        <div class="main-content" id="content" >
           <h1>Polka Dot Dress</h1>
           <p>Black 2343-2121</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rem sint nemo quos omnis dignissimos nam maiores provident perferendis asperiores.</p>
           <br>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, earum.</p>
           <div class="line"></div>
-          <form action="http://localhost/formTest.php
-          " method="POST">
+          <form>
             <select  id="sizes" class="opt" name="size" size="5">
               <option value="xs">XS</option>
               <option value="S">S</option>
@@ -82,7 +82,7 @@
               <div id="error"> </div>
               <br>
               <br>
-              <button type="submit" class="btn" >Submit</button>
+              <button type="submit" class="btn" onsubmit="submitForm()">Submit</button>
               <div class="line"></div>
               <br>
               <br>
@@ -105,6 +105,7 @@
         </div>
 
       </section>
+      </div>
       <script src="script.js"></script>
     </body>
 
